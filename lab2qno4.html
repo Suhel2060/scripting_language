@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[2,19,37,48,45,94,12,23,78];
+        let num1=array[0];
+       let num2=array[0];
+       let count=1;
+       do{
+        if(num1>array[count]){
+               num1=array[count];
+           }
+           if(num2<array[count]){
+               num2=array[count];
+           }
+           count+=1;
+       } while(count<array.length);
+
+       document.write(`<h1>smallest number in  array is ${num1} </h1><br>`);
+       document.write(`<h1>largeat number in  array is ${num2} </h1>`);
+   </script>
+</body>
+</html>

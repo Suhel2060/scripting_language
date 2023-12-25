@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+</head>
+<body>
+    <script> 
+        addEventListener("DOMContentLoaded", (event) => {  //only run down event when the html has beeen fully parsed or loaded if it is not used this script will not be runned 
+        document.querySelector('button').addEventListener("click",()=>{
+            let input=document.querySelector("input");
+            alert("hello");
+            }
+            )
+        }
+        );  
+    </script>
+
+    <input type="number"> <br>
+    <button >Submit</button>
+
+
+   
+</body>
+</html>

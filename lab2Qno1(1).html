@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function calculationMultiplication(){ 
+        let number=document.querySelector('input').value;
+        let multiplicationstrings='';
+        if(number<0){
+            document.querySelector('#result').innerHTML="<b>the given number is in negative value</b>"
+        }
+        else if(number==''){
+            document.querySelector('#result').innerHTML="<b>No data was given</b>"
+        }
+        else if(!Number.isInteger(number)){
+            document.querySelector('#result').innerHTML="<b>the given number is in decimal value</b>"
+        }
+       
+        else{
+            for (let index = 1; index <=10; index++) {
+                multiplicationstrings+=`${number}*${index}=${index*number} <br>`;  
+            }
+            document.querySelector('#result').innerHTML=multiplicationstrings;
+        }   
+        }
+    </script>
+    <input type="number"> <br>
+    <button onclick="calculationMultiplication()">Submit</button>
+    <div id="result">
+
+    </div>
+
+</body>
+</html>

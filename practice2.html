@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=prompt("Enter a Number",0);
+        if(number==null||number==""){
+            alert("Input number is not given");
+        }
+        else{
+            if(!isNaN(number)){
+                multiplicationTable(number);
+            }
+            else{
+                alert("the given input is not a number");
+            }
+        }
+
+        function multiplicationTable(number){
+            for (let index = 0; index <=10; index++) {
+                document.write(`${number} * ${index} = ${index*number} <br>`);
+                
+            }
+        }
+    </script>
+</body>
+</html>

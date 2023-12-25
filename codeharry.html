@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdy="suhel">hey i am a box</div>
+        <div class="box">hey i am a box</div>
+
+    </div>
+    <script>
+        document.querySelector(".container").innerText;
+        document.querySelector(".container").outerHTML;
+        document.querySelector(".container").tagName;
+        document.querySelector(".container").nodeName;
+        document.querySelector(".container").hidden;
+        // document.querySelector(".box").innerHTML="hey i am suhel maharjan";
+        document.querySelector(".box").hasAttribute("style");
+        document.querySelector(".box").getAttribute("style");
+        document.querySelector(".box").setAttribute("style","display:inline;color:red");
+        document.querySelector(".box").attributes;
+        document.querySelector(".box").dataset;
+        // document.querySelector(".box").removeAttribute("style");
+        document.designMode="on";
+
+
+       /* let div=document.createElement("div");
+        div.innerHTML="i have been inserted <b>by suhel</b>"
+        div.setAttribute("class","created");
+        // document.querySelector(".container").append(div); insert at last inside of container
+        // document.querySelector(".container").prepend(div); insert at first inside of container
+        // document.querySelector(".container").before(div); insert before the outside of container
+        // document.querySelector(".container").after(div); insert after the outside of container*/
+        // let cont=document.querySelector(".container");
+        // cont.insertAdjacentHTML("afterend","< b>hello iam suhel Maharjan");
+        //  document.querySelector(".box").remove();
+
+
+        // document.querySelector(".container").classList
+        // document.querySelector(".container").className;
+        // document.querySelector(".container").classList.add("harry");
+        // document.querySelector(".container").classList.remove("harry");
+         document.querySelector(".container").classList.toggle("red");
+    </script>
+</body>
+</html>

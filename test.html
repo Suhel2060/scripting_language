@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submitform() {
+    var data = document.getElementById('full_name').value;
+    alert(data);
+}
+
+        // Alternatively, you can use an event listener instead of the onclick attribute:
+        // document.getElementById('btn').addEventListener("click", () => {
+        //     var data = document.getElementById('full_name').value;
+        //     console.log(data);
+        // });
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="full_name" placeholder="Enter a name" required>
+        <button id="btn" onclick="submitform()">clickme</button>
+    </form>
+
+   
+</body>
+</html>

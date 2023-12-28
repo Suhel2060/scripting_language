@@ -8,20 +8,21 @@
 <body>
     <script>
          let array=[2,19,37,48,45,94,12,23,78];
-         let num1=array[0];
-        let num2=array[0];
+         let max=array[0];
+        let min=array[0];
         let count=1;
         while(count<array.length){
-            if(num1>array[count]){
-                num1=array[count];
+            if(array[count]>max){
+                max=array[count];
             }
-            if(num2<array[count]){
-                num2=array[count];
+            if(array[count]<min){
+                min=array[count];
             }
             count++;
         }
-        document.write(`<h1>smallest number in  array is ${num1} </h1><br>`);
-        document.write(`<h1>largeat number in  array is ${num2} </h1>`);
+        console.log(`largest: ${max} and smallest: ${min}`)
+        // document.write(`<h1>smallest number in  array is ${num1} </h1><br>`);
+        // document.write(`<h1>largeat number in  array is ${num2} </h1>`);
     </script>
 </body>
 </html>

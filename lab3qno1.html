@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[2,2,2,2,6,4,6,4,2,8,9,10];
+        let duplicate=[];
+        for(let i=0;i<array.length-1;i++){
+            for (let j= i+1; j<array.length; j++) {
+                if (array[i]==array[j]) {
+                    if(duplicate.includes(array[i])==false){
+                       duplicate.push(array[i]); 
+                    }
+                    break;
+                }      
+            }
+        }
+        console.log(duplicate);
+    </script>
+</body>
+</html>

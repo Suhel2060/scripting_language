@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div id="text"> this is text</div>
+    <input type="color">
+
+
+    <script>
+        // function colour(){
+        // let colour=document.querySelector('input').value;
+        // document.getElementById('text').setAttribute("style",`color:${colour};`);
+        // }
+
+        document.querySelector('input').addEventListener('change',()=>{
+              let colour=document.querySelector('input').value;
+        // document.getElementById('text').setAttribute("style",`color:${colour};`);
+        document.querySelector('#text').style.color=colour;
+        });
+    </script>
+</body>
+</html>
